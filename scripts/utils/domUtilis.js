@@ -109,3 +109,12 @@ export function movieCardDetails(movie) {
             `;
   cardContainer.appendChild(card);
 }
+
+document.getElementById("hamburger-menu").addEventListener("click", () => {
+  let hamburgerDrop = document.getElementById("myDropdown");
+  if (hamburgerDrop.style.display === "flex") {
+    hamburgerDrop.style.display = "none";
+  } else {
+    hamburgerDrop.style.display = "flex";
+  }
+});

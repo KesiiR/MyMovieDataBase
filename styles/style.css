@@ -85,6 +85,7 @@ body {
   border-radius: 10px;
   transition: transform 0.3s ease;
   box-shadow: 0px 0px 22px 2px #ea9c53, 5px 5px 10px 1px #000000;
+  display: none;
 }
 
 .header__fav-btn:hover {
@@ -210,4 +211,50 @@ section {
   background-color: goldenrod;
   color: black;
   transform: translateY(-5px);
+}
+
+#searchForm {
+  display: none;
+}
+
+#myDropdown {
+  display: none;
+  position: absolute;
+  background-color: goldenrod;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  top: 112px;
+  padding: 10px 0px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.favorite-btn {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.fa-bars {
+  color: goldenrod;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  #searchForm {
+    display: flex;
+  }
+
+  #favBtn {
+    display: block;
+  }
+
+  .topnav {
+    display: none;
+  }
 }
